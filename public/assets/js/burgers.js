@@ -1,11 +1,11 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".change-devour").on("click", function(event) {
+  $(".change-devoured").on("click", function(event) {
     var id = $(this).data("id");
-    var newDevour = $(this).data("newDevour");
+    var newDevour = $(this).data("newdevour");
 
     var newDevourState = {
-      Devoured: newDevour
+      devoured: newDevour
     };
 
     // Send the PUT request.
@@ -27,8 +27,11 @@ $(function() {
 
     var newBurger = {
       burger_name: $("#ca").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      devoured: true
     };
+
+    console.log("hola");
+    console.log(newBurger);
 
     // Send the POST request.
     $.ajax("/api/burgers", {
@@ -47,7 +50,7 @@ $(function() {
     var id = $(this).data("id");
 
     // Send the DELETE request.
-    $.ajax("/api/burguers/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "DELETE",
     }).then(
       function() {
