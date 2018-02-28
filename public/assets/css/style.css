@@ -2,6 +2,7 @@ li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+  font-family: 'Bowlby One SC', cursive;
 }
 
 .label {
@@ -16,4 +17,15 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+h1, h2{
+  font-family: 'Luckiest Guy', cursive;
+  color: red;
+  text-align: center;
+  
+}
+
+body{
+  background: rgb(240, 238, 168);
 }
