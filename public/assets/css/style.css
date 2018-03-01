@@ -35,10 +35,17 @@ body{
   background: rgb(240, 238, 168);
 }
 
-.yourBurger{
-  font-size: 20 px;
+.change-devoured{
+  color: blueviolet;
+  font-size: 40px;
+
+  
 }
 
-.create-form{
-  font-size: 20 px;
+#yourBurger{
+  font-size: 40px;
+}
+
+#imgId{
+  margin: auto;
 }
