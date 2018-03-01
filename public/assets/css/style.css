@@ -26,6 +26,19 @@ h1, h2{
   
 }
 
+h1{
+  font-size: 30px;
+  color: blue;
+}
+
 body{
   background: rgb(240, 238, 168);
+}
+
+.change-devoured{
+  font-size: 20 px;
+}
+
+.create-form{
+  font-size: 20 px;
 }
